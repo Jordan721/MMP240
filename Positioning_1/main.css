@@ -1,0 +1,21 @@
+body {
+    background-color: gray;
+}
+
+aside {
+    height: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: brown;
+}
+
+article {
+    height: 400px;
+    margin-bottom: 10px;
+    background-color: brown;
+}
+
+footer {
+    height: 150px;
+    background-color: brown;
+}

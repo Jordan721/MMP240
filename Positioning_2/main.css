@@ -1,0 +1,31 @@
+body {
+    background-color: blueviolet;
+}
+
+header {
+    height: 300px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-color: teal;
+}
+
+aside {
+    height: 400px;
+    width: 29%;
+    //margin-right: 29%;
+    background-color: blue;
+    float: left;
+}
+
+article {
+    height: 400px;
+    width: 70%;
+    background-color: orange;
+    float: right;
+}
+
+footer {
+    height: 150px;
+    background-color: azure;
+    clear: both;
+}

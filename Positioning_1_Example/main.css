@@ -1,0 +1,19 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+aside {
+    float: left;
+    width: 50%;
+}
+
+article {
+    float: right;
+    width: 50%;
+}
+
+footer {
+    height: 150px;
+    clear: both;
+}

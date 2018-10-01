@@ -10,17 +10,18 @@ header {
 }
 
 aside {
-    height: 300px;
+    height: 200px;
     background-color: tomato;
-    width: 0%;
+    width: 33.3%;
     float: left;
 }
 
 article {
     height: 200px;
     background-color: coral;
-    width: 0%;
-    float: right;
+    width: 33.3%;
+    float: left;
+    
 }
 
 footer {

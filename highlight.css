@@ -1,8 +1,8 @@
-a{
+a {
     color: darkgoldenrod;
-        text-decoration: none;
+    text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }

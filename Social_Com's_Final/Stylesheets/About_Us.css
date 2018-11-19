@@ -1,0 +1,25 @@
+body {
+    background: url(../Pics/maik-jonietz-535261-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-size: 40;
+    font-family: 'Anton', sans-serif;
+}
+
+p {
+    text-align: center;
+    color: cornsilk;
+    font-size: 25;
+    font-family: 'Exo 2', sans-serif;
+}
+
+p2 {
+    text-align: center;
+    color: cornsilk;
+    font-size: 25;
+    font-family: 'Exo 2', sans-serif;
+}

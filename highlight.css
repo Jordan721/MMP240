@@ -1,6 +1,7 @@
 a {
     color: darkgoldenrod;
     text-decoration: none;
+    font-family: 'Allerta Stencil', sans-serif;
 }
 
 a:hover {
@@ -13,7 +14,7 @@ body {
     font-family: monospace;
 }
 
-h1{
+h1 {
     text-align: center;
     font-family: 'Black Han Sans', sans-serif;
     font-size: 40;

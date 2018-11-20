@@ -4,10 +4,6 @@ a {
     font-family: 'Allerta Stencil', sans-serif;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
 body {
     background: url(vinicius-amano-692823-unsplash.jpg) no-repeat center center fixed;
     background-size: cover;

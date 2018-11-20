@@ -6,3 +6,16 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+body {
+    background: url(vinicius-amano-692823-unsplash.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: monospace;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 40;
+    color: deeppink;
+}

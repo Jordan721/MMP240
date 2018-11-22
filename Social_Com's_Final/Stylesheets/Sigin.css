@@ -22,8 +22,6 @@ button {
     border: none;
     cursor: pointer;
     width: 100%;
-    align-items: center;
-    justify-content: center;
 }
 
 button:hover {

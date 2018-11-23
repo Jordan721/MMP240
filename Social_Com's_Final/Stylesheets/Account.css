@@ -1,18 +1,17 @@
 body {
-    background: url(../Pics/maik-jonietz-535261-unsplash.jpg) no-repeat center center fixed;
-    background-size: cover;
+    background-color: aliceblue;
 }
 
 h1 {
     text-align: center;
-    color: aliceblue;
+    color: black;
     font-size: 40;
     font-family: 'Anton', sans-serif;
 }
 
 p {
     text-align: center;
-    color: cornsilk;
+    color: black;
     font-size: 25;
     font-family: 'Exo 2', sans-serif;
 }
@@ -67,5 +66,5 @@ p {
 }
 
 span{
-    color: aliceblue;
+    color: blue;
 }

@@ -2,7 +2,8 @@ body {
     background-color: orange;
     transition: background-color .5s;
 }
-header{
+
+header {
     background: url(../Pics/Website_and_App.png)no-repeat center center fixed;
     background-size: cover;
     padding: 50px;
@@ -37,6 +38,13 @@ p {
     text-align: center;
     color: red;
     font-size: 25;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 
@@ -92,4 +100,3 @@ p {
 span {
     color: aliceblue;
 }
-

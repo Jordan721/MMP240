@@ -1,7 +1,14 @@
 body {
+    background-color: orange;
+    transition: background-color .5s;
+}
+header{
     background: url(../Pics/Website_and_App.png)no-repeat center center fixed;
     background-size: cover;
-    transition: background-color .5s;
+    padding: 50px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
 }
 
 h1 {
@@ -85,3 +92,4 @@ p {
 span {
     color: aliceblue;
 }
+

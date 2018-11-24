@@ -11,15 +11,19 @@
 </head>
 
 <body>
+    <header>
+        <h1>Hello and welcome to Social Com's</h1>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click on Me</span>
+    </header>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="../index.html" style="color: red">Back to MMP 240 Class Site</a>
         <a href="Account.html" style="color: red">Account</a>
 
     </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click on Me</span>
+
     <div id="main">
-        <h1>Hello and welcome to Social Com's</h1>
+
         <p>You must be asking yourself "what is Social Coms" was as the creator of the site I am here to tell you to go up to the navigation bar and click About Us.</p>
 
         <h2>About Us</h2>
@@ -43,7 +47,9 @@
 
     <h3>Hello click button to login in</h3>
 
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-Im</button>
+    <div style="text-align: center;">
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign-In</button>
+    </div>
 
     <div id="id01" class="modal">
 

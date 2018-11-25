@@ -1,21 +1,3 @@
-body {
-    background-color: aliceblue;
-}
-
-h1 {
-    text-align: center;
-    color: white;
-    font-size: 40;
-    font-family: 'Anton', sans-serif;
-}
-
-h2 {
-    text-align: center;
-    color: black;
-    font-size: 40;
-    font-family: 'Anton', sans-serif;
-}
-
 header {
     background: url(../Pics/Website_and_App.png)no-repeat center center fixed;
     background-size: cover;
@@ -25,12 +7,19 @@ header {
     color: white;
 }
 
-p {
-    text-align: center;
-    color: black;
-    font-size: 25;
-    font-family: 'Exo 2', sans-serif;
+body{
+    background-color: aquamarine;
 }
+h3{
+    color: coral;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 
 .sidenav {
     height: 100%;
@@ -82,19 +71,5 @@ p {
 }
 
 span {
-    color: brown;
-}
-
-button {
-    background-color: blue;
-    color: gray;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-}
-
-button:hover {
-    opacity: 0.8;
+    color: aliceblue;
 }

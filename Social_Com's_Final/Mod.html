@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Moderators Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="Stylesheets/Mod.css">
+</head>
+
+<body>
+    <header>Moderators Page
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click on Me</span></header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <li class="index.html"><a href="Social_Com's.html" class="nav-item nav-link" style="color: red">Home Page</a></li>
+        <li class="index.html"><a href="Account.html" class="nav-item nav-link" style="color: red">Account</a></li>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="carousel slide" id="featured" data-ride="carousel">
+                <div class="carousel-inner">
+                    <ol class="carousel-indicators">
+                        <li data-target="#featured" data-slide-to="0"></li>
+                        <li data-target="#featured" data-slide-to="1"></li>
+                        <li data-target="#featured" data-slide-to="2"></li>
+                        <li data-target="#featured" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-item active">
+                        <img class="img-fluid" src="Pics/Mods%20Account%20-%20Copy%201.png" alt="Mod">
+                        <div class="carousel-caption">
+                            <h3>Mod: Jerry</h3>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="img-fluid" src="Pics/Mods%20Account%20-%20Copy%201.png" alt="Mod">
+                            <div class="carousel-caption">
+                                <h3>Mod: Terry</h3>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="Pics/Mods%20Account%20-%20Copy%201.png" alt="Mod">
+                                <div class="carousel-caption">
+                                    <h3>Mod: Kim</h3>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="img-fluid" src="Pics/Mods%20Account%20-%20Copy%201.png" alt="Mod">
+                                    <div class="carousel-caption">
+                                        <h3>Mod: Sarah</h3>
+                                    </div>
+                                </div>
+                                <a href="#featured" class="carousel-control-prev" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a href="#featured" class="carousel-control-next" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--JavaScripy scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>

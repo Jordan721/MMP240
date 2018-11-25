@@ -10,20 +10,24 @@
 </head>
 
 <body>
+    <header>
+        <h1>Your Account</h1> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click on Me</span>
+    </header>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <li class="index.html"><a href="Social_Com's.html" class="nav-item nav-link" style="color: red">Home Page</a></li>
+        <a href="Mod.html" style="color: red">Moderators Page</a>
     </div>
 
-
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click on Me</span>
     <div id="main">
-        <h1>Your Account</h1>
         <p>Wecome to your account all you have to do is create it.</p>
 
-        <p>If you want to learn more about us please click the button below.</p>
+        <p>If you want to change the background clor click on the button below this text.</p>
     </div>
-
+    <div style="text-align: center;">
+        <input type="color" id="color" />
+        <script src="JS_Files/color.js"></script>
+    </div>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";
@@ -36,10 +40,22 @@
             document.getElementById("main").style.marginLeft = "0";
             document.body.style.backgroundColor = "white";
         }
+
     </script>
-    
-    <input type="color" id="color" />
-    <script src="JS_Files/color.js"></script>
+
+    <h2>Event Planner</h2>
+    <p>Have you ever wanted to plan an event through multiple means well all you have to do is select the ptoon below to do so. All files are useable</p>
+    <div style="text-align: center;">
+        <button onclick="myFunction()">Try it</button>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.createElement("INPUT");
+            x.setAttribute("type", "file");
+            document.body.appendChild(x);
+        }
+
+    </script>
 </body>
 
 </html>

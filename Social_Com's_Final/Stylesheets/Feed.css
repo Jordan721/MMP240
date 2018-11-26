@@ -13,6 +13,7 @@ h1 {
     color: blueviolet;
     font-size: 40;
     font-family: 'Anton', sans-serif;
+    font-family: 'Permanent Marker', cursive;
 }
 
 header {
@@ -28,7 +29,7 @@ p {
     text-align: center;
     color: black;
     font-size: 25;
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Rock Salt', cursive;
 }
 
 .sidenav {
@@ -82,7 +83,9 @@ p {
 
 span {
     color: brown;
+    font-family: 'Permanent Marker', cursive;
 }
+
 a {
     color: #0088cc;
     text-decoration: none;

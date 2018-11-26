@@ -2,7 +2,7 @@
 Coded by @bachors
 ******************/
 
-$(document).ready(function() {
+$(document).ready(function () {
     tweet('bachors');
     instagram('261199158');
     google('100217793741516090316');
@@ -12,11 +12,11 @@ $(document).ready(function() {
     github('bachors');
     youtube('bachorsan');
 
-    $('#setting').click(function() {
+    $('#setting').click(function () {
         $('#form').toggleClass('show');
     });
 
-    $('#go').click(function() {
+    $('#go').click(function () {
         $('#feed').empty();
         tweet(($('#twitter').val() != '' ? $('#twitter').val() : 'bachors'));
         instagram(($('#instagram').val() != '' ? $('#instagram').val() : '261199158'));
@@ -35,7 +35,7 @@ function tweet(id) {
         url: 'http://ibacor.com/api/twitter-stream?screen_name=' + id + '&count=1&k=cb9020c4747f32673915aa1caccf1ecd',
         crossDomain: true,
         dataType: 'json'
-    }).done(function(json) {
+    }).done(function (json) {
         var data = json.data[0],
             date = new Date(data.created_at),
             time = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + date.getHours() + ':' + (date.getMinutes() + 1) + ':' + date.getSeconds(),
@@ -54,10 +54,10 @@ function tweet(id) {
                 }
             }
         }
-		var url = {
-			link: 'https://twitter.com/',
-			tag: 'https://twitter.com/hashtag/'
-		}
+        var url = {
+            link: 'https://twitter.com/',
+            tag: 'https://twitter.com/hashtag/'
+        }
         html += '<div class="post twitter">';
         html += '	<div class="content">';
         html += '		<div class="left">';
@@ -84,17 +84,17 @@ function instagram(id) {
         url: 'https://api.instagram.com/v1/users/' + id + '/media/recent/?access_token=2227436581.3a81a9f.4e37b9951fb344ffbbd57bac6aa0dca1&count=1',
         crossDomain: true,
         dataType: 'jsonp'
-    }).done(function(c) {
+    }).done(function (c) {
         var data = c.data[0],
             date = new Date(parseInt(data.created_time) * 1000),
             time = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + date.getHours() + ':' + (date.getMinutes() + 1) + ':' + date.getSeconds(),
             des = '',
             html = '';
         des += (data.caption == null || data.caption == undefined ? '' : data.caption.text);
-		var url = {
-			link: 'https://instagram.com/',
-			tag: 'https://instagram.com/explore/tags/'
-		}
+        var url = {
+            link: 'https://instagram.com/',
+            tag: 'https://instagram.com/explore/tags/'
+        }
         html += '<div class="post instagram">';
         html += '	<div class="content">';
         html += '		<div class="left">';
@@ -121,7 +121,7 @@ function google(id) {
         url: 'https://www.googleapis.com/plus/v1/people/' + id + '/activities/public?key=AIzaSyCj2GrDSBy6ISeGg3aWUM4mn3izlA1wgt0',
         crossDomain: true,
         dataType: 'jsonp'
-    }).done(function(json) {
+    }).done(function (json) {
         var data = json.items[0],
             poto = '',
             title = '',
@@ -168,17 +168,17 @@ function facebook(id) {
         url: 'https://graph.facebook.com/v2.2/' + id + '/feed?limit=1&access_token=443213172472393|l2IEt1tuyYta_278fR5NAg8V1jI',
         crossDomain: true,
         dataType: 'json'
-    }).done(function(json) {
+    }).done(function (json) {
         var data = json.data[0],
             poto = '',
             html = '';
         if (data.picture != null && data.picture != undefined) {
             poto += '<img src="https://graph.facebook.com/' + data.object_id + '/picture" class="media">'
         }
-		var url = {
-			link: 'https://facebook.com/',
-			tag: 'https://facebook.com/hashtag/'
-		}
+        var url = {
+            link: 'https://facebook.com/',
+            tag: 'https://facebook.com/hashtag/'
+        }
         html += '<div class="post facebook">';
         html += '	<div class="content">';
         html += '		<div class="left">';
@@ -207,7 +207,7 @@ function vk(id) {
         url: 'https://api.vk.com/method/wall.get?owner_id=' + id + '&filter=all&count=1',
         crossDomain: true,
         dataType: 'jsonp'
-    }).done(function(json) {
+    }).done(function (json) {
         var data = json.response[1],
             date = new Date(parseInt(data.date) * 1000),
             time = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + ' ' + date.getHours() + ':' + (date.getMinutes() + 1) + ':' + date.getSeconds(),
@@ -218,10 +218,10 @@ function vk(id) {
                 poto += '<img src="' + data.attachment.photo.src_big + '" class="media">'
             }
         }
-		var url = {
-			link: 'https://vk.com/',
-			tag: 'https://vk.com/feed?section=search&q=%23'
-		}
+        var url = {
+            link: 'https://vk.com/',
+            tag: 'https://vk.com/feed?section=search&q=%23'
+        }
         html += '<div class="post vk">';
         html += '	<div class="content">';
         html += '		<div class="left">';
@@ -251,13 +251,13 @@ function soundcloud(id) {
         url: 'https://api.soundcloud.com/tracks?user_id=' + id + '&format=json&client_id=158d3e1ba760d77b323fdf7a79b77730',
         crossDomain: true,
         dataType: 'json'
-    }).done(function(json) {
+    }).done(function (json) {
         var data = json[0],
             html = '';
-		var url = {
-			link: 'https://vk.com/',
-			tag: 'https://vk.com/feed?section=search&q=%23'
-		}
+        var url = {
+            link: 'https://vk.com/',
+            tag: 'https://vk.com/feed?section=search&q=%23'
+        }
         html += '<div class="post soundcloud">';
         html += '	<div class="content">';
         html += '		<div class="left">';
@@ -284,7 +284,7 @@ function github(id) {
         url: 'https://api.github.com/users/' + id + '/events',
         crossDomain: true,
         dataType: 'json'
-    }).done(function(json) {
+    }).done(function (json) {
         var data = json[0],
             comit = '',
             html = '';
@@ -346,7 +346,7 @@ function youtube(id) {
         url: 'https://www.googleapis.com/youtube/v3/channels?part=contentDetails&forUsername=' + id + '&key=AIzaSyCj2GrDSBy6ISeGg3aWUM4mn3izlA1wgt0',
         crossDomain: true,
         dataType: 'json'
-    }).done(function(a) {
+    }).done(function (a) {
         var b = a.items[0].contentDetails.relatedPlaylists.uploads;
         _youtube(b)
     })
@@ -357,7 +357,7 @@ function _vk(id) {
         url: 'https://api.vk.com/method/users.get?name_case=nom&user_ids=' + id,
         crossDomain: true,
         dataType: 'jsonp'
-    }).done(function(data) {
+    }).done(function (data) {
         $('.post.vk .user').html(data.response[0].first_name + ' ' + data.response[0].last_name);
     });
 }
@@ -366,7 +366,7 @@ function _youtube(b) {
     $.ajax({
         url: 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=1&playlistId=' + b + '&key=AIzaSyCj2GrDSBy6ISeGg3aWUM4mn3izlA1wgt0',
         dataType: 'json'
-    }).done(function(json) {
+    }).done(function (json) {
         var data = json.items[0],
             html = '';
         html += '<div class="post youtube">';
@@ -465,7 +465,7 @@ function strip_tags(input, allowed) {
     var tags = /<\/?([a-z][a-z0-9]*)\b[^>]*>/gi,
         commentsAndPhpTags = /<!--[\s\S]*?-->|<\?(?:php)?[\s\S]*?\?>/gi;
     return input.replace(commentsAndPhpTags, '')
-        .replace(tags, function($0, $1) {
+        .replace(tags, function ($0, $1) {
             return allowed.indexOf('<' + $1.toLowerCase() + '>') > -1 ? $0 : '';
         });
 }
@@ -486,7 +486,7 @@ function urltag(d, u, e) {
         }
     };
     var g = $.extend(f, e);
-    $.each(g, function(a, b) {
+    $.each(g, function (a, b) {
         d = d.replace(b.regex, b.template)
     });
     return d

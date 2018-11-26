@@ -1,0 +1,231 @@
+html {
+    background: #222
+}
+
+body {
+    font-size: 14px;
+    font-family: 'PT Sans';
+    line-height: 1.5;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40;
+    font-family: 'Anton', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    font-size: 40;
+    font-family: 'Anton', sans-serif;
+}
+
+header {
+    background: url(../Pics/Website_and_App.png)no-repeat center center fixed;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 25;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+span {
+    color: brown;
+}
+a {
+    color: #0088cc;
+    text-decoration: none;
+    outline: 0
+}
+
+a:hover,
+a:focus {
+    color: #005580
+}
+
+#setting {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    color: #f64c3f;
+    cursor: pointer
+}
+
+#form {
+    position: fixed;
+    left: 50px;
+    top: 10px;
+    background: rgba(0, 0, 0, .8);
+    padding: 10px;
+    display: none
+}
+
+#form input {
+    border: 0px;
+    padding: 5px;
+    margin-bottom: 5px
+}
+
+#form #go {
+    float: right;
+    background: #f64c3f;
+    color: #fff
+}
+
+#form.show {
+    display: block
+}
+
+#feed {
+    width: auto;
+    max-width: 400px;
+    margin: 50px auto
+}
+
+.post {
+    background: #fff;
+    color: #1a1c21;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.9);
+}
+
+.post .content {
+    padding: 15px;
+}
+
+.post .left {
+    float: left;
+    margin-right: 10px;
+}
+
+.post .left .fa {
+    display: block;
+    width: 48px;
+    border-radius: 50%;
+    font-size: 3em
+}
+
+.post .right {
+    overflow: hidden;
+    *overflow: visible;
+}
+
+.post .right .top {
+    min-height: 20px;
+}
+
+.post .right .top .user {
+    color: #1a1c21;
+    font-weight: 700
+}
+
+.post .right .top .date {
+    float: right;
+    margin-left: 10px;
+    color: #8b99a0;
+    font-size: 12px;
+}
+
+.post .right .bottom {
+    margin-top: 15px;
+}
+
+.post .media {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    border: 0px;
+    margin-top: 5px;
+}
+
+.post.facebook .left .fa {
+    color: #335591
+}
+
+.post.google .left .fa {
+    color: #d34836
+}
+
+.post.vk .left .fa {
+    color: #38618F
+}
+
+.post.twitter .left .fa {
+    color: #3D8FAB
+}
+
+.post.soundcloud .left .fa {
+    color: orange
+}
+
+.post.github .left .fa {
+    color: #333
+}
+
+.post.instagram .left .fa {
+    color: #8a3ab9
+}
+
+.post.youtube .left .fa {
+    color: #e52d27
+}

@@ -11,49 +11,57 @@
     <link rel="stylesheet" href="highlight.css">
     <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-sm" style="background-color: #e3f2fd;">
-        <div class="container">
-            <a href="#" class="navbar-brand">MMP 240</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MyToggleNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="MyToggleNav">
-                <div class="navbar-nav">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation</span>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="navbar-brand">MMP 240</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MyToggleNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <a href=" https://jordan721.github.io/Central_Site/" style="color: cornflowerblue" class="nav-item nav-link">Central Site</a>
+        <a href=" https://jordan721.github.io/Central_Site/" style="color: cornflowerblue">Central Site</a>
 
-                    <a href="About.html" style="color: crimson" class="nav-item nav-link">About</a>
+        <a href="About.html" style="color: crimson">About</a>
 
-                    <a href="Contact.html" style="color: darkmagenta" class="nav-item nav-link">Contact</a>
+        <a href="Contact.html" style="color: darkmagenta">Contact</a>
 
-                    <a href="HW1.html" style="color: black" class="nav-item nav-link">Week One Homework</a>
+        <a href="HW1.html" style="color: darkturquoise">Week One Homework</a>
 
-                    <a href="color_and_text/word_and_text.html" style="color: darkorange" class="nav-item nav-link">Word and Text</a>
+        <a href="color_and_text/word_and_text.html" style="color: darkorange">Word and Text</a>
 
-                    <a href="Positioning_1_Example/Positioning_1.html" style="color: darkcyan" class="nav-item nav-link">Positioning Example</a>
+        <a href="Positioning_1_Example/Positioning_1.html" style="color: darkcyan">Positioning Example</a>
 
-                    <a href="Positioning_1/Positioning_1.html" style="color: olive" class="nav-item nav-link">Positioning 1</a>
+        <a href="Positioning_1/Positioning_1.html" style="color: olive">Positioning 1</a>
 
-                    <a href="Positioning_2/Positioning_2.html" style="color: orange" class="nav-item nav-link">Positioning 2</a>
+        <a href="Positioning_2/Positioning_2.html" style="color: orange">Positioning 2</a>
 
-                    <a href="Positioning_3/Positioning_3.html" style="color: cornflowerblue" class="nav-item nav-link">Positioning 3</a>
+        <a href="Positioning_3/Positioning_3.html" style="color: cornflowerblue">Positioning 3</a>
 
-                    <a href="How_To_Site/How_to_HW.html" style="color: darkkhaki" class="nav-item nav-link">How To... Homework</a>
+        <a href="How_To_Site/How_to_HW.html" style="color: darkkhaki">How To... Homework</a>
 
-                    <a href="Try_Your_Druck/Index_T_Y_D.html" class="nav-item nav-link">MidTerm: Try Your Druck</a>
+        <a href="Try_Your_Druck/Index_T_Y_D.html" style="color: darkgoldenrod">MidTerm: Try Your Druck</a>
 
-                    <a href="Social_Com's_Final/Social_Com's.html" style="color: firebrick" class="nav-item nav-link">Final: Soical Com's</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!--JavaScripy scripts-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <a href="Social_Com's_Final/Social_Com's.html" style="color: firebrick">Final: Soical Com's</a>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.body.style.backgroundColor = "white";
+        }
+
+    </script>
 
     <h1>Hello, Everyone Welcome to my Class Site for MMP 240</h1>
 </body>

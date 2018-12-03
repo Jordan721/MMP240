@@ -5,9 +5,10 @@
         grid-template-areas:
             "nav nav nav"
             "side head head"
-            "side main footer"
-        ;
+            "side main footer";
+        grid-gap: 10px;
     }
+
 }
 
 @media screen and (min-width:1800px) {
@@ -18,6 +19,7 @@
         grid-template-areas:
             "nav nav head head"
             "side main main footer";
+        grid-gap: 10px;
     }
 }
 

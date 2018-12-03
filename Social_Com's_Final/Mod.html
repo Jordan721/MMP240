@@ -11,14 +11,20 @@
 </head>
 
 <body>
-    <header>Moderators Page
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click on Me</span></header>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation Bar</span>
+    <header>Moderators Page</header>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <li class="index.html"><a href="Social_Com's.html" class="nav-item nav-link" style="color: red">Home Page</a></li>
         <li class="index.html"><a href="Account.html" class="nav-item nav-link" style="color: red">Account</a></li>
-        <a href="Feed.html" style="color: red">Feed Page</a>
+        <li class="index.html"> <a href="Feed.html" style="color: red">Feed Page</a></li>
     </div>
+
+    <ul>
+        <li><a class="active" href="Social_Com's.html">Back to Soical Com's Home Page</a></li>
+        <li><a href="Account.html">Account</a></li>
+        <li><a href="Feed.html">Feed Page</a></li>
+    </ul>
     <script>
         function openNav() {
             document.getElementById("mySidenav").style.width = "250px";

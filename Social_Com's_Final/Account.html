@@ -11,8 +11,9 @@
 </head>
 
 <body>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click on Me</span>
     <header>
-        <h1>Your Account</h1> <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click on Me</span>
+        <h1>Your Account</h1>
     </header>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -20,6 +21,12 @@
         <a href="Feed.html" style="color: red">Feed Page</a>
         <a href="Mod.html" style="color: red">Moderators Page</a>
     </div>
+    
+    <ul>
+        <li><a class="active" href="Social_Com's.html">Back to Soical Com's Home Page</a></li>
+        <li><a href="Mod.html">Mod Page</a></li>
+        <li><a href="Feed.html">Feed Page</a></li>
+    </ul>
 
     <div id="main">
         <p><code>Welcome to your account all you have to do is create it.</code></p>
@@ -34,7 +41,9 @@
     </div>
 
     <div style="text-align: center;">
-        <label for="colorWell"><p><code>Color of Text to Match Background Chosen:</code></p></label>
+        <label for="colorWell">
+            <p><code>Color of Text to Match Background Chosen:</code></p>
+        </label>
         <input type="color" value="#ff0000" id="colorWell">
         <script src="JS_Files/text.js"></script>
     </div>

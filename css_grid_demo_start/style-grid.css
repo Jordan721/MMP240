@@ -1,0 +1,15 @@
+/*
+Parent
+*/
+.site {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto repeat(3, 1fr);
+}
+
+/*
+Child
+*/
+.masthead {
+    grid-column: 1/3;
+}

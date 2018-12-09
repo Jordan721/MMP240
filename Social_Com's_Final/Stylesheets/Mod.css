@@ -15,6 +15,10 @@ h3 {
     color: coral;
 }
 
+a {
+    font-family: 'Unlock', cursive;
+}
+
 .center {
     display: block;
     margin-left: auto;

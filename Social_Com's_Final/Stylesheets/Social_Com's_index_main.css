@@ -40,6 +40,10 @@ p {
     font-size: 25;
 }
 
+a {
+    font-family: 'Orbitron', sans-serif;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -112,7 +116,7 @@ ul {
 
 li {
     float: left;
-    border-right:1px solid #bbb;
+    border-right: 1px solid #bbb;
 }
 
 li:last-child {
@@ -134,4 +138,3 @@ li a:hover:not(.active) {
 .active {
     background-color: dodgerblue;
 }
-

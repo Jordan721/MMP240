@@ -16,6 +16,10 @@ h2 {
     font-family: 'Anton', sans-serif;
 }
 
+a {
+    font-family: 'Anton', sans-serif;
+}
+
 header {
     background: url(../Pics/Website_and_App.png)no-repeat center center fixed;
     background-size: cover;
@@ -115,7 +119,7 @@ ul {
 
 li {
     float: left;
-    border-right:1px solid #bbb;
+    border-right: 1px solid #bbb;
 }
 
 li:last-child {

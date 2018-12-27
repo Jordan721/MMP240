@@ -1,86 +1,86 @@
 <html>
 
 <head>
-    <title>Account Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Stylesheets/Account.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600i" rel="stylesheet">
+	<title>Account Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Stylesheets/Account.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600i" rel="stylesheet">
 </head>
 
 <body>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation Bar</span>
-    <header>
-        <h1>Your Account</h1>
-    </header>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#" class="navbar-brand">Social Com's</a>
-        <span class="navbar-toggler-icon"></span>
-        <a href="Social_Com's.html" style="color: red">Back to Social Com's Website</a>
-        <a href="Feed.html" style="color: red">Feed Page</a>
-        <a href="Mod.html" style="color: red">Moderators Page</a>
-        <a href="https://xd.adobe.com/view/6e99b10d-df17-41ca-67e6-7951044d61a5-18a8/" style="color: red">Wireframes of Soical coms in Adobe XD</a>
-    </div>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation Bar</span>
+	<header>
+		<h1>Your Account</h1>
+	</header>
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="#" class="navbar-brand">Social Com's</a>
+		<span class="navbar-toggler-icon"></span>
+		<a href="Social_Com's.html" style="color: red">Back to Social Com's Website</a>
+		<a href="Feed.html" style="color: red">Feed Page</a>
+		<a href="Mod.html" style="color: red">Moderators Page</a>
+		<a href="https://xd.adobe.com/view/6e99b10d-df17-41ca-67e6-7951044d61a5-18a8/" style="color: red">Wireframes of Soical coms in Adobe XD</a>
+	</div>
 
-    <ul>
-        <li><a class="active" href="Social_Com's.html">Back to Soical Com's Home Page</a></li>
-        <li><a href="Mod.html">Moderators Page</a></li>
-        <li><a href="Feed.html">Feed Page</a></li>
-        <li><a href="https://xd.adobe.com/view/6e99b10d-df17-41ca-67e6-7951044d61a5-18a8/">Wireframes of Soical coms in Adobe XD</a></li>
-    </ul>
+	<ul>
+		<li><a class="active" href="Social_Com's.html">Back to Soical Com's Home Page</a></li>
+		<li><a href="Mod.html">Moderators Page</a></li>
+		<li><a href="Feed.html">Feed Page</a></li>
+		<li><a href="https://xd.adobe.com/view/6e99b10d-df17-41ca-67e6-7951044d61a5-18a8/">Wireframes of Soical coms in Adobe XD</a></li>
+	</ul>
 
-    <div id="main">
-        <p><code>Welcome to your account all you have to do is create it.</code></p>
+	<div id="main">
+		<p><code>Welcome to your account all you have to do is create it.</code></p>
 
-        <p><code>If you want to change the background color click on the button below this text.</code></p>
-    </div>
+		<p><code>If you want to change the background color click on the button below this text.</code></p>
+	</div>
 
-    <div style="text-align: center;">
-        <input type="color" id="color" />
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-        <script type="application/javascript" src="JS_Files/color.js"></script>
-    </div>
+	<div style="text-align: center;">
+		<input type="color" id="color" />
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+		<script type="application/javascript" src="JS_Files/color.js"></script>
+	</div>
 
-    <div style="text-align: center;">
-        <label for="colorWell">
-            <p><code>Color of Text to Match Background Chosen:</code></p>
-        </label>
-        <input type="color" value="#ff0000" id="colorWell">
-        <script src="JS_Files/text.js"></script>
-    </div>
+	<div style="text-align: center;">
+		<label for="colorWell">
+			<p><code>Color of Text to Match Background Chosen:</code></p>
+		</label>
+		<input type="color" value="#ff0000" id="colorWell">
+		<script src="JS_Files/text.js"></script>
+	</div>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            document.body.style.backgroundColor = "white";
-        }
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.body.style.backgroundColor = "white";
+		}
 
-    </script>
+	</script>
 
-    <h2>Event Planner</h2>
-    <p><code>Have you ever wanted to plan an event through multiple means well all you have to do is select the ptoon below to do so. All files are useable.</code></p>
+	<h2>Event Planner</h2>
+	<p><code>Have you ever wanted to plan an event through multiple means well all you have to do is select the ptoon below to do so. All files are useable.</code></p>
 
-    <div style="text-align: center;">
-        <button onclick="myFunction()">Try it</button>
-    </div>
-    <script>
-        function myFunction() {
-            var x = document.createElement("INPUT");
-            x.setAttribute("type", "file");
-            document.body.appendChild(x);
-        }
+	<div style="text-align: center;">
+		<button onclick="myFunction()">Try it</button>
+	</div>
+	<script>
+		function myFunction() {
+			var x = document.createElement("INPUT");
+			x.setAttribute("type", "file");
+			document.body.appendChild(x);
+		}
 
-    </script>
+	</script>
 </body>
 
 </html>

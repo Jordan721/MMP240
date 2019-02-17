@@ -5,14 +5,14 @@ body {
 h1 {
     text-align: center;
     color: white;
-    font-size: 40;
+    font-size: 40px;
     font-family: 'Anton', sans-serif;
 }
 
 h2 {
     text-align: center;
     color: black;
-    font-size: 50;
+    font-size: 50px;
     font-family: 'Anton', sans-serif;
 }
 
@@ -32,7 +32,7 @@ header {
 p {
     text-align: center;
     color: black;
-    font-size: 35;
+    font-size: 35px;
     font-family: 'Righteous', cursive;
 }
 

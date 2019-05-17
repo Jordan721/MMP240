@@ -2,108 +2,97 @@
 <html>
 
 <head>
-    <title>Welcome to Social Com's</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="Stylesheets/Social_Com's_index_main.css">
-    <link rel="stylesheet" href="Stylesheets/Sigin.css">
-    <link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+	<title>Welcome to Social Com's</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="Stylesheets/Social_Com's_index_main.css">
+	<link rel="stylesheet" href="Stylesheets/Sigin.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
 </head>
 
 <body>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation Bar</span>
-    <header>
-        <h1>Hello and welcome to Social Com's</h1>
-    </header>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#" class="navbar-brand">Social Com's</a>
-        <span class="navbar-toggler-icon"></span>
-        <a href="../index.html" style="color: red">Back to MMP 240 Class Site</a>
-        <a href="Account.html" style="color: red">Account</a>
-        <a href="Feed.html" style="color: red">Feed Page</a>
-        <a href="Mod.html" style="color: red">Moderators Page</a>
-        <a href="https://xd.adobe.com/view/6e99b10d-df17-41ca-67e6-7951044d61a5-18a8/" style="color: red">Wireframes of Soical coms in Adobe XD</a>
-    </div>
-    
-        <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-        }
+	<header>
+		<h1>Hello and welcome to Social Com's</h1>
+	</header>
 
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            document.body.style.backgroundColor = "white";
-        }
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("main").style.marginLeft = "250px";
+			document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
 
-    </script>
-    
-    <ul>
-        <li><a class="active" href="../index.html">Back to MMP 240 Class Site</a></li>
-        <li><a href="Account.html">Account</a></li>
-        <li><a href="Feed.html">Feed Page</a></li>
-        <li><a href="Mod.html">Moderators Page</a></li>
-        <li><a href="https://xd.adobe.com/view/6e99b10d-df17-41ca-67e6-7951044d61a5-18a8/">Wireframes of Soical coms in Adobe XD</a></li>
-    </ul>
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+			document.getElementById("main").style.marginLeft = "0";
+			document.body.style.backgroundColor = "white";
+		}
 
-    <div id="main">
+	</script>
 
-        <p>You must be asking yourself "what is Social Coms" was as the creator of the site I am here to tell you to go up to the navigation bar and click About Us.</p>
+	<ul>
+		<li><a class="active" href="https://jordan721.github.io/Central_Site/">Back to Central Site</a></li>
+		<li><a href="Account.html">Account</a></li>
+		<li><a href="Feed.html">Feed Page</a></li>
+		<li><a href="Mod.html">Moderators Page</a></li>
+		<li><a href="https://xd.adobe.com/view/6e99b10d-df17-41ca-67e6-7951044d61a5-18a8/">Wireframes of Soical coms in Adobe XD</a></li>
+	</ul>
 
-        <h2>About Us</h2>
-        <p>Social Coms is a new and innovative Social Media website that will replace Facebook and other media Websites that give out information illegally. Social Coms was founded by Jeff Davis in the year 2018 when the scandal broke out with Facebook coming out they tried to sway voters. Their location is DownTown Brooklyn.</p>
-        <img src="Pics/Social%20Com's%20Logo.png" class="center">
-    </div>
+	<div id="main">
 
-    <h3>Hello click button to login in</h3>
+		<p>You must be asking yourself "what is Social Coms" was as the creator of the site I am here to tell you to go up to the navigation bar and click About Us.</p>
 
-    <div style="text-align: center;">
-        <button onclick="document.getElementById('id01').style.display='block'">Sign-In</button>
-    </div>
+		<h2>About Us</h2>
+		<p>Social Coms is a new and innovative Social Media website that will replace Facebook and other media Websites that give out information illegally. Social Coms was founded by Jeff Davis in the year 2018 when the scandal broke out with Facebook coming out they tried to sway voters. Their location is DownTown Brooklyn.</p>
+		<img src="Pics/Social%20Com's%20Logo.png" class="center">
+	</div>
 
-    <div id="id01" class="modal">
+	<h3>Hello click button to login in</h3>
 
-        <form class="modal-content animate" action="/action_page.php">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                <img src="Pics/elena-koycheva-1054933-unsplash.jpg" alt="Avatar" class="avatar">
-            </div>
+	<div style="text-align: center;">
+		<button onclick="document.getElementById('id01').style.display='block'">Sign-In</button>
+	</div>
 
-            <div class="container">
-                <label for="uname"><b>Username</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required>
+	<div id="id01" class="modal">
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+		<form class="modal-content animate" action="/action_page.php">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<img src="Pics/elena-koycheva-1054933-unsplash.jpg" alt="Avatar" class="avatar">
+			</div>
 
-                <a href="Account.html"><button type="submit">Login</button></a>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
+			<div class="container">
+				<label for="uname"><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="uname" required>
 
-            <div class="container" style="background-color:silver">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                <span class="psw">Forgot <a href="#">password?</a></span>
-            </div>
-        </form>
-    </div>
-    <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
+				<label for="psw"><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="psw" required>
 
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+				<a href="Account.html"><button type="submit">Login</button></a>
+				<label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				</label>
+			</div>
 
-    </script>
+			<div class="container" style="background-color:silver">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+				<span class="psw">Forgot <a href="#">password?</a></span>
+			</div>
+		</form>
+	</div>
+	<script>
+		// Get the modal
+		var modal = document.getElementById('id01');
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+
+	</script>
 </body>
 
 </html>
